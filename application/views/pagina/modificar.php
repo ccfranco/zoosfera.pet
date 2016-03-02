@@ -8,8 +8,8 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
-<link href="http://localhost/codeigniter/css/default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="http://localhost/codeigniter/fonts/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url()?>css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url()?>fonts/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -20,14 +20,14 @@
 	<div id="header" >
 		
 		<div id="menu">
-			<img src="http://localhost/codeigniter/images/fichas.jpg" width="300" height="50" alt="" />
+			<img src="<?php echo base_url()?>images/fichas.jpg" width="300" height="50" alt="" />
 			<ul>
-				<li><a href="http://localhost/codeigniter/index.php/controlador1" accesskey="1" title="">Inicio</a></li>
-				<li><a href="http://localhost/codeigniter/index.php/controlador1/login" accesskey="2" title="">Iniciar Sesion</a></li>
-				<li><a href="http://localhost/codeigniter/index.php/controlador1/ingreso" accesskey="3" title="">Ingreso de Ficha</a></li>
-				<li><a href="http://localhost/codeigniter/index.php/controlador1/administracion" accesskey="4" title="">Consultar Ficha</a></li>
-				<li class="active"><a href="http://localhost/codeigniterr/index.php/controlador1/modificar" accesskey="5" title="">Modificar Ficha</a></li>
-				<li><a href="http://localhost/codeigniter/index.php/controlador1/preguntas" accesskey="6" title="">Ficha de Tratamiento</a></li>
+				<li><a href="<?php echo base_url()?>controlador1" accesskey="1" title="">Inicio</a></li>
+				<li><a href="<?php echo base_url()?>controlador1/login" accesskey="2" title="">Iniciar Sesion</a></li>
+				<li><a href="<?php echo base_url()?>controlador1/ingreso" accesskey="3" title="">Ingreso de Ficha</a></li>
+				<li><a href="<?php echo base_url()?>controlador1/administracion" accesskey="4" title="">Consultar Ficha</a></li>
+				<li class="active"><a href="<?php echo base_url()?>controlador1/modificar" accesskey="5" title="">Modificar Ficha</a></li>
+				<li><a href="<?php echo base_url()?>controlador1/preguntas" accesskey="6" title="">Ficha de Tratamiento</a></li>
 
 			</ul>
 		</div>

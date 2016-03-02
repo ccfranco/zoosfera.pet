@@ -3,8 +3,8 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
-<link href="http://localhost/codeigniter/css/default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="http://localhost/codeigniter/fonts/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url()?>css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url()?>fonts/fonts.css" rel="stylesheet" type="text/css" media="all" />
 <!--PIE DE PAGINA-->
 <div id="footer">
 	<div class="container">

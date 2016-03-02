@@ -8,11 +8,9 @@ class Controlador1 extends CI_Controller{
 		$this->load->model('len_model');
 		$this->load->model('nino_model');
 		 $this->load->library('grocery_crud');
-		 $this->load->helper('url');
 		  $this->load->database();
 	}
 	function index(){
-		$this->load->helper('url');
 		$this->load->view('Pagina/index');
 		$this->load->view('Pagina/footer');
 	

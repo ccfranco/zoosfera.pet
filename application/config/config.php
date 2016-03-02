@@ -15,9 +15,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | and path to your installation. However, you should always configure this
 | explicitly and never rely on auto-guessing, especially in production
 | environments.
-|
+|$config['base_url'] = 'http://fichasclinicasuv.esy.es/';
+$config['base_url'] = 'http://localhost/Fichas_Clinicas/';
+
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://fichasclinicasuv.esy.es/public_html/';
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +31,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

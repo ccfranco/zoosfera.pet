@@ -17,9 +17,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |$config['base_url'] = 'http://fichasclinicasuv.esy.es/';
 $config['base_url'] = 'http://localhost/Fichas_Clinicas/';
+$config['base_url'] = 'http://www.ideasnegras.cl/fichas/';
+
 
 */
-$config['base_url'] = 'http://fichasclinicasuv.esy.es/public_html/';
+$config['base_url'] = 'http://www.ideasnegras.cl/fichas/';
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +34,7 @@ $config['base_url'] = 'http://fichasclinicasuv.esy.es/public_html/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------

@@ -21,7 +21,7 @@ $config['base_url'] = 'http://www.ideasnegras.cl/fichas/';
 
 
 */
-$config['base_url'] = 'http://www.ideasnegras.cl/fichas/';
+$config['base_url'] = 'http://localhost/Fichas_Clinicas/';
 
 
 /*
@@ -313,7 +313,7 @@ $config['cache_query_string'] = FALSE;
 | http://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'likjhtgxdyfugiopoiuyfdtrdtfyugiyhoujiuytsrsdfgkh.jgfgdi8uyrte76865r4ew4q4eretrtuipyjuthfrgd';
 
 /*
 |--------------------------------------------------------------------------

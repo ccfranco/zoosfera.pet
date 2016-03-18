@@ -7,19 +7,20 @@ class Nino_model extends CI_Model{
 		parent::__construct();
 	}
 
-	public function crearAnam($nombre,$edad,$rut,$sexo,$fam,$escolaridad,$colegio,$direccion,$comuna,$region,$tratamiento,$notas){
+	public function crearAnam($nombre,$rut,$fecha,$edad,$sexo,$telefono,$laboratorio,$diagnostico,$motivo,$ayudas,$ocupacion,$notas){
 		$data = array(
 			'ann_nombre' => $nombre,
-			'ann_edad' => $edad,
 			'ann_rut' => $rut,
+			'ann_edad' => $edad,
+			'ann_fecha' => $fecha,
+			'ann_edad' => $edad,
 			'ann_sexo' => $sexo,
-			'ann_familia' => $fam,
-			'ann_escolaridad' => $escolaridad,
-			'ann_colegio' => $colegio,
-			'ann_dir' => $direccion,
-			'ann_comuna' => $comuna,
-			'ann_region' => $region,
-			'ann_pTratamiento' => $tratamiento,
+			'ann_telefono' => $telefono,
+			'ann_laboratorio' => $laboratorio,
+			'ann_diagnostico' => $diagnostico,
+			'ann_motivo' => $motivo,
+			'ann_ayudas' => $ayudas,
+			'ann_ocupacion' => $ocupacion,
 			'ann_notas' => $notas, 
 		);
 		

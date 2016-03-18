@@ -35,11 +35,13 @@
 		<div id="menu">
 			<ul>
 				<li class="active"><a href="<?php echo base_url()?>index.php/controlador1" accesskey="1" title="">Inicio</a></li>
-				<li><a href="<?php echo base_url()?>index.php/controlador1/login" accesskey="2" title="">Iniciar Sesion</a></li>
-				<li><a href="<?php echo base_url()?>index.php/controlador1/ingreso" accesskey="3" title="">Ingreso de Ficha</a></li>
-				<li><a href="<?php echo base_url()?>index.php/controlador1/administracion" accesskey="4" title="">Consultar Ficha</a></li>
-				<li><a href="<?php echo base_url()?>index.php/controlador1/modificar" accesskey="5" title="">Modificar Ficha</a></li>
-				<li><a href="<?php echo base_url()?>index.php/controlador1/preguntas" accesskey="6" title="">Ficha de Tratamiento</a></li>
+				<li><a href="<?php echo base_url()?>index.php/login" accesskey="2" title="">Iniciar Sesion</a></li>
+				<!--
+				<li class><a href="<?php echo base_url()?>index.php/login" accesskey="3" title="">Ingreso de Ficha</a></li>
+				<li class><a href="<?php echo base_url()?>index.php/login" accesskey="4" title="">Consultar Ficha</a></li>
+				<li class><a href="<?php echo base_url()?>index.php/login" accesskey="5" title="">Modificar Ficha</a></li>
+				<li class><a href="<?php echo base_url()?>index.php/login" accesskey="6" title="">Ficha de Tratamiento</a></li>
+			-->
 
 			</ul>
 		</div>

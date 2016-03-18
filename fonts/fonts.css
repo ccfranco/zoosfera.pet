@@ -3,11 +3,11 @@
 @font-face
 {
 	font-family: 'FontAwesome';
-	src: url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-webfont.eot?v=3.0.1');
-	src: url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
-	     url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
-	     url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype'),
-	     url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+	src: url('http://localhost/Fichas_Clinicas/fonts/fontawesome-webfont.eot?v=3.0.1');
+	src: url('http://localhost/Fichas_Clinicas/fonts/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+	     url('http://localhost/Fichas_Clinicas/fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+	     url('http://localhost/Fichas_Clinicas/fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype'),
+	     url('http://localhost/Fichas_Clinicas/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -15,11 +15,11 @@
 @font-face
 {
 	font-family: 'Font-Awesome-Social';
-	src: url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-social-webfont.eot');
-	src: url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-social-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-social-webfont.woff') format('woff'),
-		 url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-social-webfont.ttf') format('truetype'),
-		 url('http://www.ideasnegras.cl/fichas/fonts/fontawesome-social-webfont.svg#Font-Awesome-More') format('svg');
+	src: url('http://localhost/Fichas_Clinicas/fonts/fontawesome-social-webfont.eot');
+	src: url('http://localhost/Fichas_Clinicas/fonts/fontawesome-social-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('http://localhost/Fichas_Clinicas/fonts/fontawesome-social-webfont.woff') format('woff'),
+		 url('http://localhost/Fichas_Clinicas/fonts/fontawesome-social-webfont.ttf') format('truetype'),
+		 url('http://localhost/Fichas_Clinicas/fonts/fontawesome-social-webfont.svg#Font-Awesome-More') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

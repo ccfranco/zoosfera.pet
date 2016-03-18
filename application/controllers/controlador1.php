@@ -42,7 +42,7 @@ class Controlador1 extends CI_Controller{
 
        public function validar(){	
 
-
+/*
 		$this->form_validation->set_rules('nombre','Nombre de Usuario','required|trim');
 		$this->form_validation->set_rules('rut','Rut','required|trim');
 		
@@ -80,38 +80,56 @@ class Controlador1 extends CI_Controller{
 
 			echo "Totos los datos estan ok: ".$this->input->post('nombre');
 			//$this->load->view('formsuccess');
-		}
-	}
 	
-		function login($idioma=null){
+  	}
+	*/
 
-		   //   $this->config->set_item('language', 'spanish');      //   Setear dinámicamente el idioma que deseamos que ejecute nuestra aplicación
-      if(!isset($_POST['maillogin'])){   //   Si no recibimos ningún valor proveniente del formulario, significa que el usuario recién ingresa.   
-         $this->load->view('login');      //   Por lo tanto le presentamos la pantalla del formulario de ingreso.
-      }
-      else{                        //   Si el usuario ya pasó por la pantalla inicial y presionó el botón "Ingresar"
-         $this->form_validation->set_rules('maillogin','nombreProf','required');      //   Configuramos las validaciones ayudandonos con la librería form_validation del Framework Codeigniter
-         $this->form_validation->set_rules('passwordlogin','contrasenaProf','required');
-         if(($this->form_validation->run()==FALSE)){            //   Verificamos si el usuario superó la validación
-            $this->load->view('login');                     //   En caso que no, volvemos a presentar la pantalla de login
-         }
-         else{                                       //   Si ambos campos fueron correctamente rellanados por el usuario,
-            $this->load->model('Usuarios_model');
-            $ExisteUsuarioyPassoword=$this->usuarios_model->ValidarUsuario($_POST['maillogin'],$_POST['passwordlogin']);   //   comprobamos que el usuario exista en la base de datos y la password ingresada sea correcta
-            if($ExisteUsuarioyPassoword){   // La variable $ExisteUsuarioyPassoword recibe valor TRUE si el usuario existe y FALSE en caso que no. Este valor lo determina el modelo.
-               echo "Validacion Ok<br><br><a href='login'>Volver</a>";   //   Si el usuario ingresó datos de acceso válido, imprimos un mensaje de validación exitosa en pantalla
-            }
-            else{   //   Si no logró validar
-               $data['error']="E-mail o password incorrecta, por favor vuelva a intentar";
-               $this->load->view('login',$data);   //   Lo regresamos a la pantalla de login y pasamos como parámetro el mensaje de error a presentar en pantalla
-            }
-         }
-      }
 
-		$this->load->view('Pagina/footer');
-	}
+  $this->load->helper('form');
+  $this->load->library('form_validation');
+
+  $this->form_validation->set_rules('nombre', 'Nombre', 'required');
+  $this->form_validation->set_rules('rut', 'Rut', 'required');
+  $this->form_validation->set_rules('fecha', 'Fecha', 'required');
+  $this->form_validation->set_rules('edad', 'Edad', 'required');
+  $this->form_validation->set_rules('telefono', 'Telefono', 'required');
+  $this->form_validation->set_rules('Laboratorio', 'laboratorio', 'required');
+  $this->form_validation->set_rules('motivo', 'Motivo Consulta', 'required');
+
+  if ($this->form_validation->run() == FALSE) {
+    $this->load->view('Pagina/ingreso');
+  } else {
+    $nombre = $this->input->post('nombre');
+    $rut = $this->input->post('rut');
+    $fecha = $this->input->post('fecha');
+    $edad = $this->input->post('edad');
+    $sexo = $this->input->post('sexo');
+    $telefono = $this->input->post('telefono');
+    $laboratorio = $this->input->post('laboratorio');
+    $diagnostico = $this->input->post('diagnostico');
+    $motivo = $this->input->post('motivo');
+    $ayudas = $this->input->post('ayudas');
+    $ocupacion = $this->input->post('ocupacion');
+    $notas = $this->input->post('notas');
+    $this->load->model('Nino_model');
+    $this->Nino_model->crearIngreso($nombre,$rut,$fecha,$edad,$sexo,$telefono,$laboratorio,$diagnostico,$motivo,$ayudas,$ocupacion,$notas);
+   $this->load->view('Pagina/ingreso');
+    echo 'Paciente Ingresado';
+    
+  }
+
+  }
 	
-	
+
+
+ /* function login(){
+
+   $this->load->helper(array('form'));
+   
+   $this->load->view('Pagina/footer');
+   
+  }
+	*/
 function administracion()
   {
     try{
